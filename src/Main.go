@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
-	var x complex64 = 3 + 4i
-	fmt.Printf("%v - %T", x, x)
+	x := 3 + 4i
+	y := 1 + 2i
+	fmt.Println(x / y)
 }
