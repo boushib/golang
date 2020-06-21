@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	// x := 3 + 4i
@@ -13,9 +11,18 @@ func main() {
 	// fmt.Println(imag(z))
 	// fmt.Println(a)
 
-	s := "Hello Go"
-	b := []byte(s)
+	// s := "Hello Go"
+	// b := []byte(s)
 
-	fmt.Printf("%v - %T\n", b, b)
-	fmt.Printf("%v - %T", string(b), string(b))
+	// fmt.Printf("%v - %T\n", b, b)
+	// fmt.Printf("%v - %T", string(b), string(b))
+
+	const (
+		_ = iota + 10
+		competitions
+		missions
+		achievements
+	)
+
+	fmt.Printf("%v - %T", competitions, competitions)
 }
