@@ -16,5 +16,6 @@ func main() {
 	s := "Hello Go"
 	b := []byte(s)
 
-	fmt.Printf("%v - %T", b, b)
+	fmt.Printf("%v - %T\n", b, b)
+	fmt.Printf("%v - %T", string(b), string(b))
 }
