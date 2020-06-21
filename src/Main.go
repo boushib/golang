@@ -5,11 +5,16 @@ import (
 )
 
 func main() {
-	x := 3 + 4i
-	y := 1 + 2i
-	z := x / y
-	a := complex(5, 4)
-	fmt.Println(real(z))
-	fmt.Println(imag(z))
-	fmt.Println(a)
+	// x := 3 + 4i
+	// y := 1 + 2i
+	// z := x / y
+	// a := complex(5, 4)
+	// fmt.Println(real(z))
+	// fmt.Println(imag(z))
+	// fmt.Println(a)
+
+	s := "Hello Go"
+	b := []byte(s)
+
+	fmt.Printf("%v - %T", b, b)
 }
