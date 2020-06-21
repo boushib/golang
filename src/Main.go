@@ -18,11 +18,14 @@ func main() {
 	// fmt.Printf("%v - %T", string(b), string(b))
 
 	const (
-		_ = iota + 10
-		competitions
-		missions
-		achievements
+		_  = iota // ignore first value
+		KB = 1 << (10 * iota)
+		MB
+		GB
+		TB
+		PB
 	)
 
-	fmt.Printf("%v - %T", competitions, competitions)
+	fileSize := 2000000000.0
+	fmt.Printf("%.2f GB\n", fileSize/GB)
 }
