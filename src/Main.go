@@ -7,5 +7,7 @@ import (
 func main() {
 	x := 3 + 4i
 	y := 1 + 2i
-	fmt.Println(x / y)
+	z := x / y
+	fmt.Println(real(z))
+	fmt.Println(imag(z))
 }
