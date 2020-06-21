@@ -5,12 +5,6 @@ import (
 )
 
 func main() {
-	var isReady bool = true
-	isReady = !isReady
-	if isReady {
-		fmt.Println("I'm ready!")
-	} else {
-		fmt.Println("I'm not ready!")
-	}
-	fmt.Println(1 == 1)
+	var x complex64 = 3 + 4i
+	fmt.Printf("%v - %T", x, x)
 }
