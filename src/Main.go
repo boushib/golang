@@ -39,9 +39,18 @@ func main() {
 	fmt.Printf("Array of arrays: %v", arrayOfArrays)
      */
 
+	// arrays
+	/*
 	a := [...]int { 3, 4, 5 }
 	b := &a
 	b[0] = 300
 	fmt.Printf("a: %v\n", a)
 	fmt.Printf("b: %v\n", b)
+	 */
+
+	// slices
+	a := []int { 1, 2, 3, 4, 5, 6 }
+	b := a[:3]
+	fmt.Printf("b: %v", b)
+
 }
