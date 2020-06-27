@@ -51,6 +51,7 @@ func main() {
 	// slices
 	a := []int { 1, 2, 3, 4, 5, 6 }
 	b := a[:3]
+	b = append(b, 100)
 	fmt.Printf("b: %v", b)
 
 }
