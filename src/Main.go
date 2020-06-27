@@ -49,6 +49,7 @@ func main() {
 	 */
 
 	// slices
+	/*
 	a := []int { 1, 2, 3}
 	b := []int {4, 5, 6}
 	c := append(a, b...)
@@ -59,4 +60,13 @@ func main() {
 
 	d := make([]int, 5, 100)
 	fmt.Printf("d: %v - capacity: %v\n", d, cap(d))
+	*/
+	
+	// maps
+	user := map[string]float32 {
+		"age": 29,
+		"score": 200,
+	}
+
+	fmt.Printf("user age: %v", user["age"])
 }
