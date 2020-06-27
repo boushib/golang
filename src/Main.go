@@ -66,10 +66,14 @@ func main() {
 	user := map[string]float32 {
 		"age": 29,
 		"score": 200,
+		"grade": 88,
 	}
 
-	otherUser := make(map[string]int)
+	// otherUser := make(map[string]int)
 
-	fmt.Printf("user age: %v\n", user["age"])
-	fmt.Printf("other user: %v\n", otherUser)
+	fmt.Printf("user: %v\n", user)
+	user["level"] = 9
+	delete(user, "age")
+	fmt.Printf("user: %v\n", user)
+	// fmt.Printf("other user: %v\n", otherUser)
 }
