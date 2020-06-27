@@ -75,5 +75,8 @@ func main() {
 	user["level"] = 9
 	delete(user, "age")
 	fmt.Printf("user: %v\n", user)
+	_, ok := user["name"]
+	// fmt.Print(name, ok)
+	fmt.Print(ok)
 	// fmt.Printf("other user: %v\n", otherUser)
 }
