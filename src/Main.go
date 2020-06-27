@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+type User struct {
+	username string
+	email string
+	password string
+	age int
+	gender string
+}
+
 func main() {
 	// 1:42:17
 	// x := 3 + 4i
@@ -63,6 +71,7 @@ func main() {
 	*/
 	
 	// maps
+	/*
 	user := map[string]float32 {
 		"age": 29,
 		"score": 200,
@@ -73,10 +82,23 @@ func main() {
 
 	fmt.Printf("user: %v\n", user)
 	user["level"] = 9
-	delete(user, "age")
+	admin := user
+	delete(admin, "age")
 	fmt.Printf("user: %v\n", user)
 	_, ok := user["name"]
 	// fmt.Print(name, ok)
 	fmt.Print(ok)
 	// fmt.Printf("other user: %v\n", otherUser)
+	 */
+
+	// struct
+	user := User {
+		username: "john",
+		email: "john@google.com",
+		password: "123456",
+		age: 29,
+		gender: "male",
+	}
+
+	fmt.Printf("user: %v\n", user)
 }
