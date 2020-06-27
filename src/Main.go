@@ -68,5 +68,8 @@ func main() {
 		"score": 200,
 	}
 
-	fmt.Printf("user age: %v", user["age"])
+	otherUser := make(map[string]int)
+
+	fmt.Printf("user age: %v\n", user["age"])
+	fmt.Printf("other user: %v\n", otherUser)
 }
