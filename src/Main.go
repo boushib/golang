@@ -56,4 +56,7 @@ func main() {
 	fmt.Printf("a: %v\n", a)
 	fmt.Printf("b: %v\n", b)
 	fmt.Printf("c: %v\n", c)
+
+	d := make([]int, 5, 100)
+	fmt.Printf("d: %v - capacity: %v\n", d, cap(d))
 }
