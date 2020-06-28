@@ -10,6 +10,11 @@ type User struct {
 	gender string
 }
 
+type Admin struct {
+	User
+	roles []string
+}
+
 func main() {
 	// 1:42:17
 	// x := 3 + 4i
@@ -100,5 +105,15 @@ func main() {
 		gender: "male",
 	}
 
+	admin := Admin{
+		roles: []string {"admin", "superadmin"},
+	}
+
+	admin.username = "root"
+	admin.email = "admin@myapp.com"
+	admin.password = "admin@123"
+
 	fmt.Printf("user: %v\n", user)
+	// fmt.Printf("username: %v\n", user.username)
+	fmt.Printf("admin: %v\n", admin)
 }
