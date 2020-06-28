@@ -1,9 +1,10 @@
 package main
 
 import "fmt"
+import "reflect"
 
 type User struct {
-	username string
+	username string `required max:"50"`
 	email string
 	password string
 	age int
@@ -97,6 +98,9 @@ func main() {
 	 */
 
 	// struct
+	u := reflect.TypeOf(User{})
+	field, _ := u.FieldByName("username")
+	fmt.Printf("username field tag: %v\n", field.Tag)
 	user := User {
 		username: "john",
 		email: "john@google.com",
@@ -115,5 +119,5 @@ func main() {
 
 	fmt.Printf("user: %v\n", user)
 	// fmt.Printf("username: %v\n", user.username)
-	fmt.Printf("admin: %v\n", admin)
+	fmt.Printf("admin username: %v\n", admin.username)
 }
